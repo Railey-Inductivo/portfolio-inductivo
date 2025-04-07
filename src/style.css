@@ -505,18 +505,10 @@ svg {
 .testimonials {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.testimonials-card-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 500px);
-  gap: 24px;
 }
 
 .testimonials-card-item {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -535,6 +527,40 @@ svg {
 
 .testimonials-card-photo img {
   width: 5.626rem;
+}
+
+.swiper-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem; /* reduce spacing between elements */
+  margin-top: 10px;
+}
+
+.swiper-pagination {
+  position: static !important;
+  margin: 0 !important;
+  width: auto;
+  background-color: red;
+  padding: 10px 20px;
+}
+
+.button-next,
+.button-prev {
+  position: static !important;
+  margin: 0 !important;
+  padding: 10px;
+  color: black;
+  transform: none !important;
+  background-color: red;
+}
+
+.button-prev {
+  border-radius: 2px 0 0 2px;
+}
+
+.button-next {
+  border-radius: 0 2px 2px 0;
 }
 
 /* ================================= End Testimonials Section ================================= */
