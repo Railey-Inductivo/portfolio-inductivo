@@ -37,6 +37,7 @@
   --fs-nav: var(--fs-500);
   --fs-button: var(--fs-500);
   --fs-h3: var(--fs-650);
+  --fs-h4: var(--fs-600);
 }
 /* =============================== End Custom Properties =============================== */
 
@@ -205,6 +206,10 @@ svg {
   font-size: var(--fs-h3);
 }
 
+.fs-h4 {
+  font-size: var(--fs-h4);
+}
+
 .fs-caption {
   font-size: var(--caption);
 }
@@ -259,6 +264,7 @@ svg {
   padding: 11px 16px;
   color: var(--primary);
   border: 3px solid var(--primary);
+  border-radius: 2px;
 }
 
 .outline-btn .fa-arrow-right {
@@ -272,6 +278,10 @@ svg {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .quote {
@@ -297,7 +307,7 @@ svg {
   display: flex;
   text-align: center;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   justify-content: space-between;
 }
 
@@ -348,10 +358,6 @@ svg {
   .primary-header {
     border-bottom: none;
   }
-
-  .nav-container {
-    padding: 20px;
-  }
   .nav-links {
     border-bottom: 3px solid var(--lighter-primary);
     align-items: center;
@@ -384,7 +390,7 @@ svg {
 
 /* ================================= Start Hero Section ================================= */
 .hero {
-  margin-top: 70px;
+  margin-top: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -395,6 +401,8 @@ svg {
 .hero .container {
   display: flex;
   flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   gap: 40px;
 }
 
@@ -407,6 +415,12 @@ svg {
   gap: 16px;
 }
 
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 @media (max-width: 783px) {
   :root {
     --primary-heading: var(--fs-800);
@@ -416,6 +430,7 @@ svg {
     --fs-button: var(--fs-400);
     --caption: var(--fs-500);
     --fs-h3: var(--fs-600);
+    --fs-h4: var(--fs-500);
   }
 
   .hero {
@@ -433,6 +448,13 @@ svg {
 }
 
 @media (max-width: 347px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 321px) {
   .hero-buttons {
     flex-direction: column;
     gap: 8px;
@@ -471,8 +493,9 @@ svg {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, 663px);
   gap: 40px;
+  justify-content: center;
 }
 
 .portfolio-card {
@@ -507,8 +530,14 @@ svg {
   padding-bottom: 5rem;
 }
 
+.testimonials-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .testimonials-card-item {
   margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -541,7 +570,7 @@ svg {
   position: static !important;
   margin: 0 !important;
   width: auto;
-  background-color: red;
+  background-color: var(--secondary);
   padding: 10px 20px;
 }
 
@@ -552,7 +581,7 @@ svg {
   padding: 10px;
   color: black;
   transform: none !important;
-  background-color: red;
+  background-color: var(--secondary);
 }
 
 .button-prev {
@@ -564,5 +593,125 @@ svg {
 }
 
 /* ================================= End Testimonials Section ================================= */
+
+/* ================================= Start About Section ================================= */
+.about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.photo-content-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 961px) {
+  .photo-content-container {
+    flex-direction: column-reverse;
+  }
+
+  .about-content-container {
+    text-align: center;
+  }
+}
+/* ================================= End About Section ================================= */
+
+/* ================================= Start Experience Section ================================= */
+.experience {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.experience .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.eduwork-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--lighter-gray);
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.edu-title-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.edu-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.icon-bg {
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.uni-name-date-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1014px) {
+  .eduwork-card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================================= End Experience Section ================================= */
+
+/* ================================= Start Services Section ================================= */
+.services .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.services-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 24px;
+  border: 2px solid var(--gray);
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+@media (max-width: 1014px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================================= End Services Section ================================= */
 
 /* =============================== End General Styling =============================== */
