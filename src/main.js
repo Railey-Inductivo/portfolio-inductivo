@@ -10,10 +10,11 @@ function toggleMenu() {
   }
 }
 
+/* ================= Testimonials Carousel ================= */
 var swiper = new Swiper(".swiper", {
   loop: true,
   slidesPerView: 3,
-  spaceBetween: 20,
+  spaceBetween: 24,
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",

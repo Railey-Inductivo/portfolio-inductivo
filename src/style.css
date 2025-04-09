@@ -251,6 +251,11 @@ svg {
   border-radius: 2px;
 }
 
+.btn .fa-arrow-right{
+  color: var(--darker-gray);
+  margin-left: 4px;
+}
+
 .secondary-btn {
   background-color: var(--primary);
   color: var(--lightest-gray);
@@ -258,6 +263,7 @@ svg {
 
 .secondary-btn .fa-arrow-right {
   color: var(--lightest-gray);
+  margin-left: 4px;
 }
 
 .outline-btn {
@@ -269,10 +275,6 @@ svg {
 
 .outline-btn .fa-arrow-right {
   color: var(--primary);
-}
-
-.fa-arrow-right {
-  color: var(--darker-gray);
   margin-left: 4px;
 }
 
@@ -493,7 +495,7 @@ svg {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 663px);
+  grid-template-columns: repeat(auto-fit, 550px);
   gap: 40px;
   justify-content: center;
 }
@@ -562,7 +564,7 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.25rem; /* reduce spacing between elements */
+  gap: 0.375rem;
   margin-top: 10px;
 }
 
