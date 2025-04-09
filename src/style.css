@@ -251,6 +251,11 @@ svg {
   border-radius: 2px;
 }
 
+.btn .fa-arrow-right {
+  color: var(--darker-gray);
+  margin-left: 4px;
+}
+
 .secondary-btn {
   background-color: var(--primary);
   color: var(--lightest-gray);
@@ -258,6 +263,7 @@ svg {
 
 .secondary-btn .fa-arrow-right {
   color: var(--lightest-gray);
+  margin-left: 4px;
 }
 
 .outline-btn {
@@ -269,10 +275,6 @@ svg {
 
 .outline-btn .fa-arrow-right {
   color: var(--primary);
-}
-
-.fa-arrow-right {
-  color: var(--darker-gray);
   margin-left: 4px;
 }
 
