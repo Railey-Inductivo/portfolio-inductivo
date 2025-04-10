@@ -528,6 +528,12 @@ svg {
   width: 60px;
 }
 
+@media (max-width: 961px) {
+  .testimonials-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ================================= End Testimonials Section ================================= */
 
 /* ================================= Start About Section ================================= */
