@@ -246,6 +246,11 @@ svg {
   background-color: var(--secondary);
 }
 
+.primary-btn .fa-arrow-right {
+  color: var(--darker-gray);
+  margin-left: 4px;
+}
+
 .primary-btn:hover {
   background-color: #a4baff;
   color: var(--darker-gray);
@@ -305,7 +310,6 @@ svg {
   display: flex;
   align-items: center;
   gap: 40px;
-  list-style: none;
 }
 
 .nav-links a {
@@ -403,17 +407,8 @@ svg {
     --fs-h4: var(--fs-500);
   }
 
-  .hero {
-    text-align: center;
-  }
-
-  .hero .container {
-    align-items: center;
-  }
-
   .hero-description {
     width: 100%;
-    text-align: center;
   }
 }
 
@@ -500,7 +495,7 @@ svg {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  padding: 24px;
+  padding: 40px;
   border-radius: 5px;
   background-color: var(--lightest-gray);
 }
@@ -538,22 +533,25 @@ svg {
 .photo-content-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
 }
 
 .about-content-container {
   display: flex;
   flex-direction: column;
+  width: 50%;
   gap: 40px;
 }
 
-@media (max-width: 961px) {
+@media (max-width: 1025px) {
   .photo-content-container {
     flex-direction: column-reverse;
+    align-items: flex-start;
   }
 
   .about-content-container {
-    text-align: center;
+    width: 100%;
   }
 }
 /* ================================= End About Section ================================= */
@@ -582,7 +580,7 @@ svg {
   gap: 16px;
   background-color: var(--lightest-gray);
   border-radius: 5px;
-  padding: 50px;
+  padding: 40px;
 }
 
 .edu-title-container {
@@ -628,8 +626,8 @@ svg {
 .service-item {
   display: flex;
   flex-direction: column;
-  padding: 32px;
-  gap: 24px;
+  padding: 40px;
+  gap: 16px;
   border: 2px solid var(--dark-gray);
   border-radius: 5px;
   transition: 0.5s ease;
@@ -706,6 +704,12 @@ svg {
 .footer-col {
   flex-direction: column;
   display: flex;
+  gap: 16px;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
