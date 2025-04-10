@@ -241,6 +241,17 @@ svg {
   border-radius: 2px;
 }
 
+.primary-btn {
+  color: var(--darker-gray);
+  background-color: var(--secondary);
+}
+
+.primary-btn:hover {
+  background-color: #a4baff;
+  color: var(--darker-gray);
+  transition: background-color 0.3s ease;
+}
+
 .secondary-btn {
   background-color: var(--primary);
   color: var(--lightest-gray);
@@ -303,22 +314,11 @@ svg {
   align-items: center;
 }
 
-.nav-links .primary-btn {
-  color: var(--darker-gray);
-  background-color: var(--secondary);
-}
-
-.nav-links a:not(.primary-btn):hover {
+.nav-links a:hover {
   color: var(--secondary);
   padding-bottom: 2px;
   border-bottom: 2px solid var(--secondary);
   transition: 0.1s ease-in;
-}
-
-.nav-links .primary-btn:hover {
-  background-color: #a4baff;
-  color: var(--darker-gray);
-  transition: background-color 0.3s ease;
 }
 
 .menu-icon {
@@ -437,13 +437,6 @@ svg {
   gap: 40px;
 }
 
-.portfolio-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 .portfolio-title {
   display: flex;
   gap: 6px;
@@ -529,7 +522,7 @@ svg {
 }
 
 @media (max-width: 961px) {
-  .testimonials-grid{
+  .testimonials-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -649,5 +642,91 @@ svg {
 }
 
 /* ================================= End Services Section ================================= */
+
+/* ================================= Start Footer Section ================================= */
+.contact-container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.contact-container .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.contact-header {
+  flex-shrink: 0;
+}
+
+.contact-button {
+  flex-shrink: 0;
+}
+
+.contact-line-spacer {
+  flex-grow: 1;
+}
+
+.contact-hr {
+  width: 100%;
+  background-color: #ccc; /* Or your desired color */
+}
+
+@media (max-width: 573px) {
+  .contact-hr {
+    display: none;
+  }
+
+  .contact-container .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+.footer-container .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.footer-container .container img {
+  width: 160px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.footer-col {
+  flex-direction: column;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-col a {
+  color: var(--lightest-gray);
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 738px) {
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+/* ================================= End Footer Section ================================= */
 
 /* =============================== End General Styling =============================== */
